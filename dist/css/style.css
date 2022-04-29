@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Raleway:wght@500&display=swap");
+.btn {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn:hover {
+  transform: translateY(-5px);
+  opacity: 0.95;
+}
+.btn-primary {
+  background-color: #ec8c1d;
+}
+.btn-secondary {
+  background-color: #460083;
+}
+
+/*------------------------------------------------ 
+------------------- BASIC STYLING ----------------
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #460083;
+  color: #f4f4f4;
+}
+html a,
+body a {
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+html li,
+body li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1260px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/*------------------------------------------------ 
+---------------------- NAVBAR --------------------
+-------------------------------------------------- */
+.nav {
+  text-align: center;
+  padding: 2.5rem 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  position: relative;
+}
+.nav .arrow {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .arrow-part {
+  width: 30px;
+  height: 5px;
+  background-color: #1dec8c;
+  transition: all ease 0.3s;
+}
+.nav .arrow-left {
+  border-radius: 5px 0 0 5px;
+}
+.nav .arrow-right {
+  border-radius: 0 5px 5px 0;
+}
+.nav-hover {
+  transition: all 0.3s ease;
+  position: absolute;
+  background-color: #460083;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 1rem;
+  opacity: 0;
+}
+.nav-hover li {
+  margin-top: 1rem;
+}
+.nav-hover li a:hover {
+  color: #ec8c1d;
+}
+.nav-hover li:first-child {
+  margin-top: 2rem;
+}
+
+/*------------------------------------------------ 
+------------------ Hero Section ------------------
+-------------------------------------------------- */
+.hero {
+  background: #000 url(../../img/bg-hero.svg) no-repeat center/cover;
+  width: 100vw;
+  height: 70vh;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: 0.05rem;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+.hero-content h1 span {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
